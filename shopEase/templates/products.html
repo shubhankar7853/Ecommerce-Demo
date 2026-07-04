@@ -1,0 +1,168 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1 class="page-title">Our Products</h1>
+
+<div class="search-filter">
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="🔍 Search products..."
+        onkeyup="searchProducts()">
+
+    <select
+        id="categoryFilter"
+        onchange="filterProducts()">
+
+        <option value="all">All Products</option>
+        <option value="laptop">Laptop</option>
+        <option value="mobile">Mobile</option>
+        <option value="audio">Audio</option>
+        <option value="watch">Watch</option>
+    </select>
+
+</div>
+
+<div class="product-container">
+
+    <!-- Laptop -->
+    <div class="product-card" data-category="laptop">
+
+        <span class="discount">20% OFF</span>
+
+        <button class="wishlist">❤️</button>
+
+        <img src="{{ url_for('static', filename='images/laptop.jpg') }}">
+
+        <h3>ASUS Gaming Laptop</h3>
+
+        <div class="rating">
+            ⭐⭐⭐⭐⭐
+        </div>
+
+        <p class="old-price">₹95,999</p>
+        <p class="price">₹75,999</p>
+
+        <div class="buttons">
+
+            <button
+                onclick="addToCart('ASUS Gaming Laptop',75999)">
+                Add to Cart
+            </button>
+
+            <button
+onclick="window.location.href='/product-details'"
+class="view-btn">
+
+    View Details
+
+</button>
+
+        </div>
+
+    </div>
+
+    <!-- Phone -->
+    <div class="product-card" data-category="mobile">
+
+        <span class="discount">15% OFF</span>
+
+        <button class="wishlist">❤️</button>
+
+        <img src="{{ url_for('static', filename='images/iphone.jpg') }}">
+
+        <h3>iPhone 14</h3>
+
+        <div class="rating">
+            ⭐⭐⭐⭐⭐
+        </div>
+
+        <p class="old-price">₹79,999</p>
+        <p class="price">₹69,999</p>
+
+        <div class="buttons">
+
+            <button
+                onclick="addToCart('iPhone 14',69999)">
+                Add to Cart
+            </button>
+
+            <button class="view-btn">
+                View Details
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Headphone -->
+    <div class="product-card" data-category="audio">
+
+        <span class="discount">30% OFF</span>
+
+        <button class="wishlist">❤️</button>
+
+        <img src="{{ url_for('static', filename='images/headphone.jpg') }}">
+
+        <h3>Sony Headphones</h3>
+
+        <div class="rating">
+            ⭐⭐⭐⭐
+        </div>
+
+        <p class="old-price">₹34,999</p>
+        <p class="price">₹24,999</p>
+
+        <div class="buttons">
+
+            <button
+                onclick="addToCart('Sony Headphones',24999)">
+                Add to Cart
+            </button>
+
+            <button class="view-btn">
+                View Details
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Watch -->
+    <div class="product-card" data-category="watch">
+
+        <span class="discount">40% OFF</span>
+
+        <button class="wishlist">❤️</button>
+
+        <img src="{{ url_for('static', filename='images/watch.jpg') }}">
+
+        <h3>Smart Watch</h3>
+
+        <div class="rating">
+            ⭐⭐⭐⭐
+        </div>
+
+        <p class="old-price">₹8,999</p>
+        <p class="price">₹4,999</p>
+
+        <div class="buttons">
+
+            <button
+                onclick="addToCart('Smart Watch',4999)">
+                Add to Cart
+            </button>
+
+            <button class="view-btn">
+                View Details
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
