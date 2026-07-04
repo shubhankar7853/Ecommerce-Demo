@@ -5,38 +5,35 @@
 <h1 class="page-title">My Cart</h1>
 
 <div id="cart-items"></div>
+<div class="order-summary">
+
+    <h2>Order Summary</h2>
+
+    <p>
+        Subtotal:
+        <span id="subtotal">₹0</span>
+    </p>
+
+    <p>
+        Delivery:
+        <span>₹99</span>
+    </p>
+
+    <hr>
+
+    <h3>
+        Total:
+        <span id="grand-total">₹0</span>
+    </h3>
+
+    <a href="/checkout">
+        <button class="checkout-btn">
+            Proceed to Checkout
+        </button>
+    </a>
+
+</div>
 
 <h2 id="total"></h2>
-
-<script>
-let cart =
-    JSON.parse(
-        localStorage.getItem("cart")
-    ) || [];
-
-let html = "";
-let total = 0;
-
-cart.forEach(item=>{
-
-    html += `
-    <div class="cart-item">
-        <h3>${item.name}</h3>
-        <p>₹${item.price}</p>
-    </div>
-    `;
-
-    total += item.price;
-});
-
-document.getElementById(
-    "cart-items"
-).innerHTML = html;
-
-document.getElementById(
-    "total"
-).innerHTML =
-"Total: ₹" + total;
-</script>
 
 {% endblock %}

@@ -1,0 +1,109 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1 style="text-align:center; margin:30px;">
+    {{ category.upper() }}
+</h1>
+
+<div class="product-grid">
+
+<!-- ================= FASHION ================= -->
+{% if category == "fashion" %}
+
+<div class="product-card"><h3>T-Shirt</h3><p>$25</p><button>Add to Cart</button></div>
+<div class="product-card"><h3>Jeans</h3><p>$40</p><button>Add to Cart</button></div>
+<div class="product-card"><h3>Hoodie</h3><p>$35</p><button>Add to Cart</button></div>
+<div class="product-card"><h3>Jacket</h3><p>$75</p><button>Add to Cart</button></div>
+<div class="product-card"><h3>Shirt</h3><p>$30</p><button>Add to Cart</button></div>
+<div class="product-card"><h3>Kurta</h3><p>$45</p><button>Add to Cart</button></div>
+<div class="product-card"><h3>Sweater</h3><p>$55</p><button>Add to Cart</button></div>
+<div class="product-card"><h3>Blazer</h3><p>$95</p><button>Add to Cart</button></div>
+<div class="product-card"><h3>Track Pant</h3><p>$28</p><button>Add to Cart</button></div>
+<div class="product-card"><h3>Shorts</h3><p>$20</p><button>Add to Cart</button></div>
+
+{% endif %}
+
+<!-- ================= ELECTRONICS ================= -->
+{% if category == "electronics" %}
+
+<div class="product-card"><h3>iPhone</h3><p>$999</p><button>Add to Cart</button></div>
+<div class="product-card"><h3>Gaming Laptop</h3><p>$1299</p><button>Add to Cart</button></div>
+<div class="product-card"><h3>Headphones</h3><p>$59</p><button>Add to Cart</button></div>
+<div class="product-card"><h3>Smart Watch</h3><p>$149</p><button>Add to Cart</button></div>
+<div class="product-card"><h3>Camera</h3><p>$799</p><button>Add to Cart</button></div>
+<div class="product-card"><h3>Tablet</h3><p>$399</p><button>Add to Cart</button></div>
+<div class="product-card"><h3>Speaker</h3><p>$99</p><button>Add to Cart</button></div>
+<div class="product-card"><h3>Monitor</h3><p>$299</p><button>Add to Cart</button></div>
+<div class="product-card"><h3>Keyboard</h3><p>$49</p><button>Add to Cart</button></div>
+<div class="product-card"><h3>Mouse</h3><p>$39</p><button>Add to Cart</button></div>
+
+{% endif %}
+
+<!-- ================= FURNITURE ================= -->
+{% if category == "furniture" %}
+
+<div class="product-card"><h3>Sofa</h3><p>$599</p><button>Add to Cart</button></div>
+<div class="product-card"><h3>Bed</h3><p>$799</p><button>Add to Cart</button></div>
+<div class="product-card"><h3>Chair</h3><p>$99</p><button>Add to Cart</button></div>
+<div class="product-card"><h3>Table</h3><p>$199</p><button>Add to Cart</button></div>
+<div class="product-card"><h3>Wardrobe</h3><p>$499</p><button>Add to Cart</button></div>
+<div class="product-card"><h3>Bookshelf</h3><p>$149</p><button>Add to Cart</button></div>
+<div class="product-card"><h3>Dining Table</h3><p>$699</p><button>Add to Cart</button></div>
+<div class="product-card"><h3>TV Stand</h3><p>$120</p><button>Add to Cart</button></div>
+<div class="product-card"><h3>Study Desk</h3><p>$180</p><button>Add to Cart</button></div>
+<div class="product-card"><h3>Office Chair</h3><p>$220</p><button>Add to Cart</button></div>
+
+{% endif %}
+
+<!-- ================= BEAUTY ================= -->
+{% if category == "beauty" %}
+
+<div class="product-card"><h3>Lipstick</h3><p>$15</p><button>Add to Cart</button></div>
+<div class="product-card"><h3>Face Wash</h3><p>$10</p><button>Add to Cart</button></div>
+<div class="product-card"><h3>Perfume</h3><p>$55</p><button>Add to Cart</button></div>
+<div class="product-card"><h3>Shampoo</h3><p>$20</p><button>Add to Cart</button></div>
+<div class="product-card"><h3>Conditioner</h3><p>$18</p><button>Add to Cart</button></div>
+<div class="product-card"><h3>Body Lotion</h3><p>$12</p><button>Add to Cart</button></div>
+<div class="product-card"><h3>Face Cream</h3><p>$25</p><button>Add to Cart</button></div>
+<div class="product-card"><h3>Nail Polish</h3><p>$8</p><button>Add to Cart</button></div>
+<div class="product-card"><h3>Hair Serum</h3><p>$22</p><button>Add to Cart</button></div>
+<div class="product-card"><h3>Makeup Kit</h3><p>$80</p><button>Add to Cart</button></div>
+
+{% endif %}
+
+<!-- ================= SHOES ================= -->
+{% if category == "shoes" %}
+
+<div class="product-card"><h3>Nike Shoes</h3><p>$89</p><button>Add to Cart</button></div>
+<div class="product-card"><h3>Adidas Shoes</h3><p>$95</p><button>Add to Cart</button></div>
+<div class="product-card"><h3>Puma Shoes</h3><p>$75</p><button>Add to Cart</button></div>
+<div class="product-card"><h3>Running Shoes</h3><p>$60</p><button>Add to Cart</button></div>
+<div class="product-card"><h3>Sports Shoes</h3><p>$80</p><button>Add to Cart</button></div>
+<div class="product-card"><h3>Casual Shoes</h3><p>$50</p><button>Add to Cart</button></div>
+<div class="product-card"><h3>Formal Shoes</h3><p>$110</p><button>Add to Cart</button></div>
+<div class="product-card"><h3>Boots</h3><p>$140</p><button>Add to Cart</button></div>
+<div class="product-card"><h3>Sneakers</h3><p>$90</p><button>Add to Cart</button></div>
+<div class="product-card"><h3>Sandals</h3><p>$35</p><button>Add to Cart</button></div>
+
+{% endif %}
+
+<!-- ================= ACCESSORIES ================= -->
+{% if category == "accessories" %}
+
+<div class="product-card"><h3>Watch</h3><p>$99</p><button>Add to Cart</button></div>
+<div class="product-card"><h3>Wallet</h3><p>$25</p><button>Add to Cart</button></div>
+<div class="product-card"><h3>Belt</h3><p>$20</p><button>Add to Cart</button></div>
+<div class="product-card"><h3>Sunglasses</h3><p>$45</p><button>Add to Cart</button></div>
+<div class="product-card"><h3>Cap</h3><p>$15</p><button>Add to Cart</button></div>
+<div class="product-card"><h3>Bag</h3><p>$55</p><button>Add to Cart</button></div>
+<div class="product-card"><h3>Backpack</h3><p>$70</p><button>Add to Cart</button></div>
+<div class="product-card"><h3>Bracelet</h3><p>$18</p><button>Add to Cart</button></div>
+<div class="product-card"><h3>Necklace</h3><p>$40</p><button>Add to Cart</button></div>
+<div class="product-card"><h3>Ring</h3><p>$35</p><button>Add to Cart</button></div>
+
+{% endif %}
+
+</div>
+
+{% endblock %}

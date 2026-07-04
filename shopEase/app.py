@@ -34,5 +34,12 @@ def admin():
 def product_details():
     return render_template('product_details.html')
 
+@app.route('/category/<category>')
+def category(category):
+    return render_template(
+        'category.html',
+        category=category
+    )
+
 if __name__ == "__main__":
     app.run(debug=True)
