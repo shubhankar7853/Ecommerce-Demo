@@ -32,9 +32,7 @@ def admin():
 
 @app.route('/product-details')
 def product_details():
-    return render_template(
-        'product_details.html'
-    )
+    return render_template('product_details.html')
 
 if __name__ == "__main__":
     app.run(debug=True)

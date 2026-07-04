@@ -1,6 +1,228 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>Welcome to ShopEase</h1>
-<p>Your online shopping destination.</p>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<nav class="navbar">
+
+    <div class="logo">
+        ShopEase
+    </div>
+
+    <div class="search-box">
+        <input type="text" placeholder="Search products...">
+        <button>
+            <i class="fas fa-search"></i>
+        </button>
+    </div>
+
+    <ul class="menu">
+        <li><a href="#">Home</a></li>
+
+        <li><a href="#">Shop</a></li>
+
+        <li><a href="#">Categories</a></li>
+
+        <li><a href="#">Offers</a></li>
+
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+    <div class="icons">
+
+        <i class="fas fa-heart"></i>
+
+        <i class="fas fa-shopping-cart"></i>
+
+        <i class="fas fa-user"></i>
+
+    </div>
+
+</nav>
+<section class="hero">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <span class="offer">🔥 Mega Sale 50% OFF</span>
+
+        <h1>Discover Premium Shopping Experience</h1>
+
+        <p>
+            Shop Fashion, Electronics, Home Decor, Beauty,
+            Sports and thousands of premium products with
+            amazing discounts.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#" class="btn-primary">
+                Shop Now
+            </a>
+
+            <a href="#" class="btn-secondary">
+                Explore Collection
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="categories">
+
+    <h2>Shop by Category</h2>
+
+    <div class="category-grid">
+
+        <div class="category-card">
+            <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=500&q=80">
+            <h3>Fashion</h3>
+        </div>
+
+        <div class="category-card">
+            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=500&q=80">
+            <h3>Electronics</h3>
+        </div>
+
+        <div class="category-card">
+            <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=500&q=80">
+            <h3>Furniture</h3>
+        </div>
+
+        <div class="category-card">
+            <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=500&q=80">
+            <h3>Beauty</h3>
+        </div>
+
+        <div class="category-card">
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=500&q=80">
+            <h3>Shoes</h3>
+        </div>
+
+        <div class="category-card">
+            <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=500&q=80">
+            <h3>Accessories</h3>
+        </div>
+
+    </div>
+
+</section>
+<section class="flash-sale">
+
+    <div class="sale-header">
+
+        <h2>⚡ Flash Sale</h2>
+
+        <div id="countdown">
+            02 : 15 : 30
+        </div>
+
+    </div>
+
+    <div class="product-grid">
+
+        <div class="product-card">
+
+            <span class="discount">-40%</span>
+
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80">
+
+            <h3>Nike Running Shoes</h3>
+
+            <div class="rating">
+                ⭐⭐⭐⭐⭐
+            </div>
+
+            <div class="price">
+
+                <span class="new-price">$89</span>
+
+                <span class="old-price">$149</span>
+
+            </div>
+
+            <button>Add to Cart</button>
+
+        </div>
+
+        <div class="product-card">
+
+            <span class="discount">-35%</span>
+
+            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80">
+
+            <h3>iPhone</h3>
+
+            <div class="rating">
+                ⭐⭐⭐⭐⭐
+            </div>
+
+            <div class="price">
+
+                <span class="new-price">$999</span>
+
+                <span class="old-price">$1199</span>
+
+            </div>
+
+            <button>Add to Cart</button>
+
+        </div>
+
+        <div class="product-card">
+
+            <span class="discount">-50%</span>
+
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80">
+
+            <h3>Wireless Headphones</h3>
+
+            <div class="rating">
+                ⭐⭐⭐⭐⭐
+            </div>
+
+            <div class="price">
+
+                <span class="new-price">$59</span>
+
+                <span class="old-price">$119</span>
+
+            </div>
+
+            <button>Add to Cart</button>
+
+        </div>
+
+        <div class="product-card">
+
+            <span class="discount">-60%</span>
+
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80">
+
+            <h3>Smart Watch</h3>
+
+            <div class="rating">
+                ⭐⭐⭐⭐⭐
+            </div>
+
+            <div class="price">
+
+                <span class="new-price">$129</span>
+
+                <span class="old-price">$299</span>
+
+            </div>
+
+            <button>Add to Cart</button>
+
+        </div>
+
+    </div>
+
+</section>
 {% endblock %}
