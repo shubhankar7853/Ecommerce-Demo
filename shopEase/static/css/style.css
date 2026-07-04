@@ -494,4 +494,230 @@ font-size:16px;
 
 font-weight:bold;
 
+.quantity{
+    margin:20px 0;
+}
+
+.quantity input{
+    width:70px;
+    padding:8px;
+    font-size:16px;
+}
+
+.cart-btn,
+.buy-btn{
+    padding:12px 25px;
+    border:none;
+    border-radius:8px;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    margin-right:10px;
+}
+
+.cart-btn{
+    background:#007bff;
+}
+
+.buy-btn{
+    background:#28a745;
+}
+
+.order-box{
+    width:250px;
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.order-box h3{
+    margin-bottom:15px;
+}
+
+.order-box h2{
+    color:green;
+}
+.stock{
+    color:green;
+    font-weight:bold;
+    margin:10px 0;
+}
+
+.delivery{
+    color:#007bff;
+    margin:8px 0;
+}
+
+.return{
+    color:#555;
+    margin:8px 0;
+}
+
+.wishlist-btn{
+    background:#ff4d6d;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:8px;
+    cursor:pointer;
+    margin-bottom:15px;
+}
+.cart-item{
+    background:white;
+    padding:20px;
+    margin:20px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+.order-summary{
+    width:300px;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    margin-top:30px;
+}
+
+.order-summary h2{
+    margin-bottom:20px;
+}
+
+.order-summary p,
+.order-summary h3{
+    display:flex;
+    justify-content:space-between;
+    margin:15px 0;
+}
+
+.checkout-btn{
+    width:100%;
+    padding:12px;
+    background:#28a745;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+.checkout-container{
+    width:400px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+}
+
+.checkout-container input,
+.checkout-container select{
+    width:100%;
+    padding:10px;
+}
+
+.checkout-container button{
+    width:100%;
+    padding:12px;
+    background:green;
+    color:white;
+    border:none;
+}
+/* TESTIMONIALS */
+
+.testimonials{
+    padding:80px 8%;
+    background:#f8f9ff;
+    text-align:center;
+}
+
+.testimonials h2{
+    font-size:42px;
+    margin-bottom:40px;
+}
+
+.testimonial-grid{
+    display:flex;
+    gap:30px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.testimonial-card{
+    background:#fff;
+    width:300px;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.testimonial-card:hover{
+    transform:translateY(-10px);
+}
+
+.testimonial-card p{
+    font-size:18px;
+    color:#555;
+}
+
+.testimonial-card h4{
+    margin-top:20px;
+    color:#2563eb;
+}
+
+/* SUBSCRIBE */
+
+.subscribe{
+    background:linear-gradient(135deg,#2563eb,#4f46e5);
+    color:white;
+    text-align:center;
+    padding:70px 20px;
+}
+
+.subscribe h2{
+    font-size:40px;
+}
+
+.subscribe-box{
+    margin-top:30px;
+}
+
+.subscribe-box input{
+    width:350px;
+    padding:15px;
+    border:none;
+    border-radius:30px;
+}
+
+.subscribe-box button{
+    padding:15px 30px;
+    border:none;
+    background:white;
+    color:#2563eb;
+    border-radius:30px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+/* FOOTER */
+
+.footer{
+    background:#111827;
+    color:white;
+    padding:60px 8%;
+}
+
+.footer-grid{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+.footer h3{
+    margin-bottom:15px;
+    color:#60a5fa;
+}
+
+.footer p{
+    margin:10px 0;
+    color:#d1d5db;
+}
 }

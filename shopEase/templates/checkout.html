@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="checkout-container">
+
+    <h1>Checkout</h1>
+
+    <form>
+
+        <input
+            type="text"
+            placeholder="Full Name"
+            required>
+
+        <br><br>
+
+        <input
+            type="text"
+            placeholder="Address"
+            required>
+
+        <br><br>
+
+        <input
+            type="tel"
+            placeholder="Phone Number"
+            required>
+
+        <br><br>
+
+        <select>
+            <option>Cash On Delivery</option>
+            <option>UPI</option>
+            <option>Credit Card</option>
+        </select>
+
+        <br><br>
+
+        <button type="submit">
+            Place Order
+        </button>
+
+    </form>
+
+</div>
+
+<input
+    type="text"
+    id="address"
+    placeholder="Address">
+
+<br><br>
+
+<button
+    type="button"
+    onclick="getLocation()">
+
+    📍 Use Current Location
+
+</button>
+</form>
+</div>
+{% endblock%}
