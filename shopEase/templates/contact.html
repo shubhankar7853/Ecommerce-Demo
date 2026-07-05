@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<section class="contact-section">
+
+    <div class="contact-header">
+        <h1>Contact Us</h1>
+        <p>We're here to help you with any questions about ShopEase.</p>
+    </div>
+
+    <div class="contact-container">
+
+        <!-- Contact Info -->
+        <div class="contact-card">
+
+            <h2>📞 Get In Touch</h2>
+
+            <div class="contact-item">
+                <h3>📧 Email</h3>
+                <p>bariksubhankar364@gmail.com</p>
+            </div>
+
+            <div class="contact-item">
+                <h3>📱 Phone</h3>
+                <p>7853907364</p>
+            </div>
+
+            <div class="contact-item">
+                <h3>📍 Address</h3>
+                <p>GIFT, Bhubaneswar, Odisha</p>
+            </div>
+
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-card">
+
+            <h2>Send Message</h2>
+
+            <form>
+
+                <input
+                    type="text"
+                    placeholder="Your Name"
+                    required>
+
+                <input
+                    type="email"
+                    placeholder="Your Email"
+                    required>
+
+                <input
+                    type="text"
+                    placeholder="Subject">
+
+                <textarea
+                    placeholder="Your Message"
+                    rows="6"></textarea>
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+    <div class="support-box">
+
+    <h2>⭐ 24/7 Customer Support</h2>
+
+    <p>
+        Our support team is available anytime to help you.
+    </p>
+
+    <div class="social-icons">
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-whatsapp"></i>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-linkedin"></i>
+    </div>
+
+</div>
+
+</section>
+
+{% endblock %}

@@ -817,3 +817,243 @@ font-weight:bold;
     color: #d1d5db;
     margin: 8px 0;
 }
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    padding:30px;
+}
+
+.product-card{
+    background:#fff;
+    padding:15px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+    text-align:center;
+}
+
+.product-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.product-card button{
+    width:100%;
+    padding:12px;
+    background:#2563eb;
+    color:white;
+    border:none;
+    border-radius:10px;
+    margin-top:10px;
+    cursor:pointer;
+}
+/* CONTACT PAGE */
+
+.contact-section{
+    padding:80px 8%;
+    background:#f5f8ff;
+    min-height:100vh;
+}
+
+.contact-header{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.contact-header h1{
+    font-size:55px;
+    color:#222;
+    margin-bottom:10px;
+}
+
+.contact-header p{
+    font-size:18px;
+    color:#666;
+}
+
+.contact-container{
+    display:flex;
+    gap:40px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.contact-card{
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    width:500px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.contact-card:hover{
+    transform:translateY(-8px);
+}
+
+.contact-card h2{
+    margin-bottom:25px;
+    color:#2563eb;
+}
+
+.contact-item{
+    margin-bottom:25px;
+}
+
+.contact-item h3{
+    margin-bottom:8px;
+}
+
+.contact-card input,
+.contact-card textarea{
+    width:100%;
+    padding:15px;
+    margin-bottom:15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:16px;
+}
+
+.contact-card button{
+    width:100%;
+    padding:15px;
+    background:#2563eb;
+    color:white;
+    border:none;
+    border-radius:10px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+.contact-card button:hover{
+    background:#1749b8;
+}
+/* PREMIUM CONTACT PAGE */
+
+.contact-section{
+    padding:80px 8%;
+    min-height:100vh;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.45),
+        rgba(0,0,0,0.45)
+    ),
+    url('https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1600&q=80');
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+.contact-header{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.contact-header h1{
+    color:white;
+    font-size:60px;
+    font-weight:700;
+}
+
+.contact-header p{
+    color:#e2e8f0;
+    font-size:18px;
+}
+
+.contact-container{
+    display:flex;
+    gap:35px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.contact-card{
+    background:rgba(255,255,255,0.95);
+    backdrop-filter:blur(10px);
+    padding:40px;
+    width:500px;
+    border-radius:20px;
+    box-shadow:0 20px 40px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.contact-card:hover{
+    transform:translateY(-10px);
+}
+
+.contact-card h2{
+    color:#2563eb;
+    margin-bottom:25px;
+}
+
+.contact-item{
+    margin-bottom:25px;
+    padding:15px;
+    background:#f8fafc;
+    border-radius:10px;
+}
+
+.contact-item h3{
+    margin-bottom:8px;
+    color:#0f172a;
+}
+
+.contact-card input,
+.contact-card textarea{
+    width:100%;
+    padding:15px;
+    margin-bottom:15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:16px;
+}
+
+.contact-card button{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    background:linear-gradient(45deg,#2563eb,#1d4ed8);
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+}
+
+.contact-card button:hover{
+    transform:scale(1.02);
+}
+
+/* EXTRA FEATURES */
+
+.support-box{
+    margin-top:40px;
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+.support-box h2{
+    color:#2563eb;
+    margin-bottom:10px;
+}
+
+.social-icons{
+    margin-top:20px;
+}
+
+.social-icons i{
+    font-size:28px;
+    margin:0 10px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.social-icons i:hover{
+    transform:scale(1.2);
+}

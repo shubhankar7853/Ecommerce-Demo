@@ -29,6 +29,34 @@ def checkout():
 @app.route('/admin')
 def admin():
     return render_template('admin.html')
+@app.route('/shop')
+def shop():
+    return render_template('products.html')
+
+
+@app.route('/categories')
+def categories():
+    return render_template('index.html')
+
+
+@app.route('/offers')
+def offers():
+    return render_template('products.html')
+
+
+@app.route('/contact')
+def contact():
+    return render_template('contact.html')
+
+
+@app.route('/wishlist')
+def wishlist():
+    return render_template('wishlist.html')
+
+
+@app.route('/profile')
+def profile():
+    return render_template('login.html')
 
 @app.route('/product-details')
 def product_details():
