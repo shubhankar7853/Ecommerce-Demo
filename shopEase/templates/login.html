@@ -1,17 +1,56 @@
 {% extends 'base.html' %}
-
 {% block content %}
-<div class="login-box">
-    <h2>Login</h2>
 
-    <form>
-        <input type="email" placeholder="Email" required>
-        <br><br>
+<div class="login-page">
 
-        <input type="password" placeholder="Password" required>
-        <br><br>
+    <div class="floating-icons">
+        <span>🛒</span>
+        <span>🎧</span>
+        <span>🎁</span>
+        <span>📦</span>
+    </div>
 
-        <button type="submit">Login</button>
-    </form>
+    <div class="login-card">
+
+        <div class="login-logo">🛍️</div>
+
+        <h1>Shop<span>Ease</span></h1>
+        <p>Premium Shopping Experience</p>
+
+        <form>
+
+            <input type="email" placeholder="Email Address">
+
+            <input type="password" placeholder="Password">
+
+            <div class="login-options">
+                <label>
+                    <input type="checkbox">
+                    Remember Me
+                </label>
+
+                <a href="#">Forgot Password?</a>
+            </div>
+
+            <button type="submit" class="login-btn">
+                Login
+            </button>
+
+            <div class="divider">OR</div>
+
+            <button class="google-btn" type="button">
+                Continue with Google
+            </button>
+
+            <p class="signup">
+                Don't have an account?
+                <a href="/signup">Create Account</a>
+            </p>
+
+        </form>
+
+    </div>
+
 </div>
+
 {% endblock %}

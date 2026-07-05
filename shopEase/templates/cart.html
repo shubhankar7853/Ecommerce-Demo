@@ -2,38 +2,145 @@
 
 {% block content %}
 
-<h1 class="page-title">My Cart</h1>
+<div class="cart-page">
 
-<div id="cart-items"></div>
-<div class="order-summary">
+    <div class="cart-left">
 
-    <h2>Order Summary</h2>
+        <h1>🛒 Shopping Cart</h1>
 
-    <p>
-        Subtotal:
-        <span id="subtotal">₹0</span>
-    </p>
+        <div class="cart-card">
 
-    <p>
-        Delivery:
-        <span>₹99</span>
-    </p>
+            <img src="{{ url_for('static', filename='images/phone.jpg') }}" class="cart-img">
 
-    <hr>
+            <div class="cart-details">
 
-    <h3>
-        Total:
-        <span id="grand-total">₹0</span>
-    </h3>
+                <h2>Apple iPhone 16 Pro (Premium Smartphone, Desert Titanium, 256GB)</h2>
 
-    <a href="/checkout">
-        <button class="checkout-btn">
-            Proceed to Checkout
-        </button>
-    </a>
+                <p class="stock">In Stock</p>
+
+                <p class="seller">Sold by ShopEase</p>
+
+                <ul>
+                    <li>6.7-inch display</li>
+                    <li>A18 Pro chip</li>
+                    <li>48MP Triple Camera</li>
+                    <li>23MP Front Camera</li>
+                    <li>All-day Battery Life</li>
+                </ul>
+
+                <div class="cart-actions">
+                    <a href="#">Delete</a>
+                    <a href="#">Save for later</a>
+                    <a href="#">Share</a>
+                </div>
+
+            </div>
+
+            <div class="quantity-box">
+                <button>-</button>
+                <span>1</span>
+                <button>+</button>
+            </div>
+
+            <div class="price-box">
+                <h2>₹1,29,999</h2>
+                <del>₹1,44,999</del>
+                <span class="save">Save ₹15,000</span>
+            </div>
+
+        </div>
+
+        <div class="recommend">
+
+            <h2>Customers Also Shopped For</h2>
+
+            <div class="recommend-grid">
+
+                <div class="recommend-card">
+                    <img src="{{ url_for('static', filename='images/watch.jpg') }}">
+                    <h4>Smart Watch</h4>
+                    <p>₹1299</p>
+                    ⭐⭐⭐⭐⭐
+                </div>
+
+                <div class="recommend-card">
+                    <img src="{{ url_for('static', filename='images/headphone.jpg') }}">
+                    <h4>Headphones</h4>
+                    <p>₹59</p>
+                    ⭐⭐⭐⭐⭐
+                </div>
+
+                <div class="recommend-card">
+                    <img src="{{ url_for('static', filename='images/laptop.jpg') }}">
+                    <h4>Gaming Laptop</h4>
+                    <p>₹129999</p>
+                    ⭐⭐⭐⭐⭐
+                </div>
+
+                <div class="recommend-card">
+                    <img src="{{ url_for('static', filename='images/phone.jpg') }}">
+                    <h4>iPhone 15</h4>
+                    <p>₹79999</p>
+                    ⭐⭐⭐⭐⭐
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="cart-right">
+
+        <div class="summary-card">
+
+            <h2>Order Summary</h2>
+
+            <div class="row">
+                <span>Price</span>
+                <span>₹1,29,999</span>
+            </div>
+
+            <div class="row">
+                <span>Discount</span>
+                <span class="green">-₹15,000</span>
+            </div>
+
+            <div class="row">
+                <span>Delivery</span>
+                <span class="green">FREE</span>
+            </div>
+
+            <div class="row">
+                <span>Packaging</span>
+                <span>₹49</span>
+            </div>
+
+            <hr>
+
+            <div class="row total">
+                <span>Total Amount</span>
+                <span>₹1,15,048</span>
+            </div>
+
+            <button class="buy-btn">
+                🔒 PROCEED TO BUY
+            </button>
+
+            <div class="payments">
+                VISA | Mastercard | UPI
+            </div>
+
+            <h4>Apply Coupon</h4>
+            <input type="text" placeholder="Coupon Code">
+
+            <h4>Check Delivery</h4>
+            <input type="text" placeholder="Enter Pincode">
+
+        </div>
+
+    </div>
 
 </div>
-
-<h2 id="total"></h2>
 
 {% endblock %}
