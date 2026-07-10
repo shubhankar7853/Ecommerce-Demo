@@ -28,18 +28,31 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     </ul>
 
     <div class="icons">
-        <a href="/wishlist">
-            <i class="fas fa-heart"></i>
-        </a>
 
-        <a href="/cart">
-            <i class="fas fa-shopping-cart"></i>
-        </a>
+    <a href="/wishlist">
+        <i class="fas fa-heart"></i>
+    </a>
 
-        <a href="/profile">
+    <a href="/cart">
+        <i class="fas fa-shopping-cart"></i>
+    </a>
+
+    {% if session.get("user") %}
+        <a href="/logout">
+            <i class="fas fa-sign-out-alt"></i>
+        </a>
+    {% else %}
+        <a href="/login">
             <i class="fas fa-user"></i>
         </a>
-    </div>
+    {% endif %}
+
+</div>
+    {% if session.get("user") %}
+    <a href="/logout" class="login-btn">Logout</a>
+{% else %}
+    <a href="/login" class="login-btn">Login</a>
+{% endif %}
 
 </nav>
 <section class="hero">
@@ -73,43 +86,6 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     </div>
 
 </section>
-<section class="categories">
-
-    <h2>Shop by Category</h2>
-
-    <div class="category-grid">
-
-        <div class="category-card">
-            <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=500&q=80">
-            <h3>Fashion</h3>
-        </div>
-
-        <div class="category-card">
-            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=500&q=80">
-            <h3>Electronics</h3>
-        </div>
-
-        <div class="category-card">
-            <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=500&q=80">
-            <h3>Furniture</h3>
-        </div>
-
-        <div class="category-card">
-            <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=500&q=80">
-            <h3>Beauty</h3>
-        </div>
-
-        <div class="category-card">
-            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=500&q=80">
-            <h3>Shoes</h3>
-        </div>
-
-        <div class="category-card">
-            <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=500&q=80">
-            <h3>Accessories</h3>
-        </div>
-
-    </div>
 
 </section><section class="categories">
 
@@ -373,7 +349,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     </div>
 
 </section>
-<<!-- Testimonials -->
+<!-- Testimonials -->
 <section class="testimonials">
 
     <h2>💬 What Our Customers Say</h2>

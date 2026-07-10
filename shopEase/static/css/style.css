@@ -1761,3 +1761,214 @@ font-weight:bold;
     color:#2563eb;
     text-decoration:none;
 }
+.alert{
+    background:#ff4d4d;
+    color:white;
+    padding:12px;
+    border-radius:10px;
+    text-align:center;
+    margin-bottom:20px;
+    font-weight:600;
+}
+/* ================= OFFERS PAGE ================= */
+
+.offer-hero{
+    position:relative;
+    height:85vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    background:
+    linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+    url("https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?auto=format&fit=crop&w=1800&q=80");
+    background-size:cover;
+    background-position:center;
+}
+
+.offer-content h1{
+    font-size:75px;
+    font-weight:800;
+}
+
+.offer-content h2{
+    font-size:42px;
+    color:#ffd700;
+    margin:15px 0;
+}
+
+.offer-content p{
+    font-size:22px;
+    margin-bottom:30px;
+}
+
+.sale-badge{
+    background:#ff3b30;
+    padding:10px 25px;
+    border-radius:30px;
+    font-weight:bold;
+    display:inline-block;
+    margin-bottom:20px;
+}
+
+.offer-buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+.shop-btn,
+.deal-btn{
+    padding:15px 35px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.shop-btn{
+    background:#2563eb;
+    color:white;
+}
+
+.shop-btn:hover{
+    background:#1749b8;
+}
+
+.deal-btn{
+    background:white;
+    color:#111;
+}
+
+.deal-btn:hover{
+    transform:translateY(-5px);
+}
+
+.coupon-section{
+    padding:70px 8%;
+    background:#f8f9ff;
+    text-align:center;
+}
+
+.coupon-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    margin-top:40px;
+}
+
+.coupon-card{
+    background:white;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.coupon-card:hover{
+    transform:translateY(-10px);
+}
+
+.coupon-card h3{
+    color:#2563eb;
+    font-size:30px;
+}
+
+.offer-products{
+    padding:80px 8%;
+    background:#eef4ff;
+}
+
+.offer-products h2{
+    text-align:center;
+    font-size:42px;
+    margin-bottom:40px;
+}
+
+.offer-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+.offer-card{
+    background:white;
+    border-radius:20px;
+    padding:20px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+    transition:.3s;
+    position:relative;
+}
+
+.offer-card:hover{
+    transform:translateY(-10px);
+}
+
+.offer-card span{
+    position:absolute;
+    top:15px;
+    left:15px;
+    background:red;
+    color:white;
+    padding:8px 15px;
+    border-radius:20px;
+    font-size:14px;
+    font-weight:bold;
+}
+
+.offer-card img{
+    width:100%;
+    height:220px;
+    object-fit:contain;
+    margin-top:20px;
+}
+
+.offer-card h3{
+    margin:20px 0 10px;
+}
+
+.offer-card p{
+    font-size:20px;
+    font-weight:bold;
+    color:#2563eb;
+}
+
+.offer-card del{
+    color:#888;
+    margin-right:10px;
+}
+
+.offer-card button{
+    width:100%;
+    margin-top:20px;
+    padding:14px;
+    background:#2563eb;
+    color:white;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.bank-offer{
+    padding:70px 8%;
+    background:#111827;
+    color:white;
+    text-align:center;
+}
+
+.bank-box{
+    max-width:700px;
+    margin:auto;
+    margin-top:30px;
+    background:#1f2937;
+    padding:30px;
+    border-radius:20px;
+}
+
+.bank-box p{
+    margin:18px 0;
+    font-size:20px;
+}

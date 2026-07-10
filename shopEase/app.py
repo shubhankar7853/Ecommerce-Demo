@@ -1,18 +1,64 @@
-from flask import Flask, render_template
-
+from flask import Flask, render_template, request, redirect, session, flash
+import sqlite3
 app = Flask(__name__)
+app.secret_key = "shopease123"
 
 @app.route('/')
 def home():
     return render_template('index.html')
 
-@app.route('/login')
+@app.route('/login', methods=['GET', 'POST'])
 def login():
-    return render_template('login.html')
 
-@app.route('/signup')
+    if request.method == "POST":
+
+        email = request.form["email"]
+        password = request.form["password"]
+
+        conn = sqlite3.connect("database.db")
+        cursor = conn.cursor()
+
+        cursor.execute(
+            "SELECT * FROM users WHERE email=? AND password=?",
+            (email, password)
+        )
+
+        user = cursor.fetchone()
+
+        conn.close()
+
+        if user:
+            session["user"] = user[1]
+            return redirect("/")
+
+        flash("Invalid Email or Password")
+        return redirect("/login")
+
+    return render_template("login.html")
+@app.route('/signup', methods=['GET', 'POST'])
 def signup():
-    return render_template('signup.html')
+
+    if request.method == "POST":
+
+        name = request.form["name"]
+        email = request.form["email"]
+        password = request.form["password"]
+
+        conn = sqlite3.connect("database.db")
+        cursor = conn.cursor()
+
+        cursor.execute(
+            "INSERT INTO users (name, email, password) VALUES (?, ?, ?)",
+            (name, email, password)
+        )
+
+        conn.commit()
+        conn.close()
+
+        flash("Account Created Successfully!")
+        return redirect("/login")
+
+    return render_template("signup.html")
 
 @app.route('/products')
 def products():
@@ -39,10 +85,6 @@ def categories():
     return render_template('index.html')
 
 
-@app.route('/offers')
-def offers():
-    return render_template('products.html')
-
 
 @app.route('/contact')
 def contact():
@@ -61,6 +103,16 @@ def profile():
 @app.route('/product-details')
 def product_details():
     return render_template('product_details.html')
+
+@app.route("/offers")
+def offers():
+    return render_template("offers.html")
+
+@app.route("/logout")
+def logout():
+    session.pop("user", None)
+    flash("Logged out successfully!")
+    return redirect("/login")
 
 @app.route('/category/<category>')
 def category(category):

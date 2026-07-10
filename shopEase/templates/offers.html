@@ -1,0 +1,113 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<section class="offer-hero">
+
+    <div class="offer-overlay"></div>
+
+    <div class="offer-content">
+
+        <span class="sale-badge">🔥 LIMITED TIME SALE</span>
+
+        <h1>MEGA SALE</h1>
+
+        <h2>UP TO 70% OFF</h2>
+
+        <p>
+            Fashion • Electronics • Mobiles • Watches • Shoes
+        </p>
+
+        <div class="offer-buttons">
+            <a href="/shop" class="shop-btn">Shop Now</a>
+            <a href="/contact" class="deal-btn">View Deals</a>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="coupon-section">
+
+    <h2>🎁 Exclusive Coupons</h2>
+
+    <div class="coupon-grid">
+
+        <div class="coupon-card">
+            <h3>SAVE500</h3>
+            <p>Flat ₹500 OFF</p>
+        </div>
+
+        <div class="coupon-card">
+            <h3>WELCOME10</h3>
+            <p>10% OFF First Order</p>
+        </div>
+
+        <div class="coupon-card">
+            <h3>FREESHIP</h3>
+            <p>Free Delivery</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="offer-products">
+
+    <h2>⚡ Today's Best Deals</h2>
+
+    <div class="offer-grid">
+
+        <div class="offer-card">
+            <span>70% OFF</span>
+            <img src="{{ url_for('static', filename='images/laptop.jpg') }}">
+            <h3>Gaming Laptop</h3>
+            <p><del>₹99,999</del> ₹69,999</p>
+            <button>Shop Now</button>
+        </div>
+
+        <div class="offer-card">
+            <span>50% OFF</span>
+            <img src="{{ url_for('static', filename='images/iphone.jpg') }}">
+            <h3>iPhone</h3>
+            <p><del>₹89,999</del> ₹69,999</p>
+            <button>Shop Now</button>
+        </div>
+
+        <div class="offer-card">
+            <span>40% OFF</span>
+            <img src="{{ url_for('static', filename='images/watch.jpg') }}">
+            <h3>Smart Watch</h3>
+            <p><del>₹7,999</del> ₹4,999</p>
+            <button>Shop Now</button>
+        </div>
+
+        <div class="offer-card">
+            <span>35% OFF</span>
+            <img src="{{ url_for('static', filename='images/headphone.jpg') }}">
+            <h3>Headphones</h3>
+            <p><del>₹5,999</del> ₹3,999</p>
+            <button>Shop Now</button>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="bank-offer">
+
+    <h2>💳 Bank Offers</h2>
+
+    <div class="bank-box">
+
+        <p>🏦 SBI Cards - Extra 10% OFF</p>
+
+        <p>💳 HDFC Cards - Cashback ₹2000</p>
+
+        <p>🏛 ICICI Cards - No Cost EMI</p>
+
+    </div>
+
+</section>
+
+{% endblock %}
